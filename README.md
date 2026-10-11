@@ -1,16 +1,27 @@
-## Hi there 👋
+# Hello_Universe
+(ง'̀-'́)ง
 
-<!--
-**agungap-ID/agungap-ID** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<div align="center">
 
-Here are some ideas to get you started:
+# 👊 Hi, I'm Agung Ap
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### *"I'm just a developer who's a hero for fun. 😁 "*
+
+<img src="https://github.com/agungap-ID/Hello_Universe/blob/main/Saitama-Dev.svg" alt="Animated Saitama Serious Punch" width="450" />
+
+[![GitHub Followers](https://img.shields.io/github/followers/agungap-ID?label=Followers&style=for-the-badge&color=F9D342&logo=github)](https://github.com/agungap-ID)
+[![GitHub Stars](https://img.shields.io/github/stars/agungap-ID?style=for-the-badge&color=EA2027&logo=github)](https://github.com/agungap-ID)
+
+---
+
+</div>
+
+## 🏋️‍♂️ My Daily Training Routine
+
+```bash
+# How to achieve 100% bug-free code:
+$ 100 Commits 💻
+$ 100 Pull Requests 🔀
+$ 100 Code Reviews 🔍
+$ 10km Scrolling Documentation 📜
+$ EVERY SINGLE DAY! 🥵
