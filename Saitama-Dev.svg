@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-dark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="100%" stop-color="#161B22"/>
+    </linearGradient>
+
+    <!-- Energy Aura Gradient -->
+    <radialGradient id="energy-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF4D4D" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#F9D342" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#0D1117" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Panel Box Shadow -->
+    <filter id="panel-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+
+    <!-- Glowing Fist Effect -->
+    <filter id="fist-glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1000" height="360" rx="16" fill="url(#bg-dark)" stroke="#30363D" stroke-width="2"/>
+
+  <!-- Main Title -->
+  <text x="500" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="800" fill="#F9D342" text-anchor="middle" letter-spacing="2">
+    THE ONE-PUNCH EXECUTION PROCESS
+  </text>
+  <text x="500" y="62" font-family="monospace" font-size="12" fill="#8B949E" text-anchor="middle">
+    github_workflow.step_by_step.v1
+  </text>
+
+  <!-- ================= STEP 1: IDLE / OK MODE ================= -->
+  <g transform="translate(30, 85)" filter="url(#panel-shadow)">
+    <rect width="215" height="240" rx="12" fill="#161B22" stroke="#30363D" stroke-width="2"/>
+    
+    <!-- Step Header -->
+    <rect x="0" y="0" width="215" height="32" rx="12" fill="#21262D"/>
+    <text x="10" y="21" font-family="monospace" font-size="12" font-weight="700" fill="#8B949E">01. IDLE STATE</text>
+    
+    <!-- Face (OK Mode) -->
+    <circle cx="107" cy="115" r="45" fill="#FFE0BD" stroke="#222" stroke-width="3"/>
+    <ellipse cx="90" cy="110" rx="6" ry="7" fill="#FFF" stroke="#222" stroke-width="2"/>
+    <circle cx="90" cy="110" r="2" fill="#222"/>
+    <ellipse cx="124" cy="110" rx="6" ry="7" fill="#FFF" stroke="#222" stroke-width="2"/>
+    <circle cx="124" cy="110" r="2" fill="#222"/>
+    <line x1="95" y1="130" x2="119" y2="130" stroke="#222" stroke-width="3" stroke-linecap="round"/>
+    <!-- Yellow Collar -->
+    <path d="M 72 152 Q 107 170 142 152 L 152 195 L 62 195 Z" fill="#F9D342" stroke="#222" stroke-width="3"/>
+
+    <!-- Status Code Label -->
+    <rect x="25" y="190" width="165" height="28" rx="6" fill="#0D1117" stroke="#30363D"/>
+    <text x="107" y="208" font-family="monospace" font-size="11" font-weight="700" fill="#8B949E" text-anchor="middle">status: "OK." (200)</text>
+  </g>
+
+  <!-- ================= STEP 2: BUG DETECTED ================= -->
+  <g transform="translate(265, 85)" filter="url(#panel-shadow)">
+    <rect width="215" height="240" rx="12" fill="#161B22" stroke="#30363D" stroke-width="2"/>
+    
+    <!-- Step Header -->
+    <rect x="0" y="0" width="215" height="32" rx="12" fill="#21262D"/>
+    <text x="10" y="21" font-family="monospace" font-size="12" font-weight="700" fill="#EA2027">02. BUG DETECTED</text>
+    
+    <!-- Serious Face -->
+    <circle cx="107" cy="115" r="45" fill="#FFE0BD" stroke="#222" stroke-width="3"/>
+    <!-- Intense Eyebrows -->
+    <polygon points="80,96 102,105 100,108 78,99" fill="#222"/>
+    <polygon points="134,96 112,105 114,108 136,99" fill="#222"/>
+    <!-- Sharp Eyes -->
+    <polygon points="82,106 100,110 85,116" fill="#FFF" stroke="#222" stroke-width="1.5"/>
+    <circle cx="92" cy="111" r="2" fill="#222"/>
+    <polygon points="132,106 114,110 129,116" fill="#FFF" stroke="#222" stroke-width="1.5"/>
+    <circle cx="122" cy="111" r="2" fill="#222"/>
+    <!-- Clenched Teeth -->
+    <rect x="94" y="128" width="26" height="8" rx="2" fill="#FFF" stroke="#222" stroke-width="2"/>
+    <!-- Shading Lines -->
+    <line x1="107" y1="70" x2="107" y2="85" stroke="#EA2027" stroke-width="2" stroke-dasharray="2 2"/>
+    
+    <!-- Status Code Label -->
+    <rect x="25" y="190" width="165" height="28" rx="6" fill="#0D1117" stroke="#EA2027"/>
+    <text x="107" y="208" font-family="monospace" font-size="11" font-weight="700" fill="#EA2027" text-anchor="middle">ERR: CRITICAL_BUG</text>
+  </g>
+
+  <!-- ================= STEP 3: WIND-UP / CHARGING ================= -->
+  <g transform="translate(500, 85)" filter="url(#panel-shadow)">
+    <rect width="215" height="240" rx="12" fill="#161B22" stroke="#30363D" stroke-width="2"/>
+    
+    <!-- Step Header -->
+    <rect x="0" y="0" width="215" height="32" rx="12" fill="#21262D"/>
+    <text x="10" y="21" font-family="monospace" font-size="12" font-weight="700" fill="#F9D342">03. CHARGING</text>
+    
+    <!-- Energy Speed Lines -->
+    <line x1="20" y1="50" x2="60" y2="90" stroke="#F9D342" stroke-width="2" opacity="0.6"/>
+    <line x1="195" y1="50" x2="155" y2="90" stroke="#F9D342" stroke-width="2" opacity="0.6"/>
+    <line x1="15" y1="140" x2="65" y2="130" stroke="#F9D342" stroke-width="2" opacity="0.6"/>
+
+    <!-- Pull-Back Fist -->
+    <circle cx="107" cy="115" r="50" fill="url(#energy-glow)"/>
+    <g transform="translate(72, 80)" filter="url(#fist-glow)">
+      <!-- Red Glove Fist -->
+      <rect x="15" y="20" width="40" height="35" rx="10" fill="#EA2027" stroke="#FFF" stroke-width="2"/>
+      <rect x="10" y="28" width="12" height="22" rx="4" fill="#C0392B" stroke="#FFF" stroke-width="1.5"/>
+    </g>
+
+    <!-- Status Code Label -->
+    <rect x="25" y="190" width="165" height="28" rx="6" fill="#0D1117" stroke="#F9D342"/>
+    <text x="107" y="208" font-family="monospace" font-size="11" font-weight="700" fill="#F9D342" text-anchor="middle">COMPILING_SERIOUS_PUNCH</text>
+  </g>
+
+  <!-- ================= STEP 4: SERIOUS IMPACT ================= -->
+  <g transform="translate(735, 85)" filter="url(#panel-shadow)">
+    <rect width="235" height="240" rx="12" fill="#161B22" stroke="#EA2027" stroke-width="2"/>
+    
+    <!-- Step Header -->
+    <rect x="0" y="0" width="235" height="32" rx="12" fill="#EA2027"/>
+    <text x="10" y="21" font-family="monospace" font-size="12" font-weight="900" fill="#FFF">04. IMPACT (RESOLVED)</text>
+    
+    <!-- Impact Burst Background -->
+    <polygon points="117,45 130,80 165,60 145,95 185,115 145,135 165,170 130,150 117,185 104,150 69,170 89,135 49,115 89,95 69,60 104,80" fill="#F9D342" opacity="0.2"/>
+
+    <!-- Big Giant Punch (Perspective Zoom) -->
+    <g transform="translate(48, 55)" filter="url(#fist-glow)">
+      <!-- Giant Glove Fist -->
+      <path d="M 25 30 C 25 10, 50 5, 75 5 C 100 5, 115 20, 115 45 C 115 70, 100 100, 70 100 C 45 100, 25 80, 25 60 Z" fill="#EA2027" stroke="#FFF" stroke-width="4"/>
+      <!-- Knuckle Lines -->
+      <line x1="50" y1="20" x2="50" y2="55" stroke="#FFF" stroke-width="3"/>
+      <line x1="72" y1="18" x2="72" y2="58" stroke="#FFF" stroke-width="3"/>
+      <line x1="92" y1="25" x2="92" y2="58" stroke="#FFF" stroke-width="3"/>
+      <!-- Thumb -->
+      <path d="M 20 50 C 10 50, 10 75, 30 75 Z" fill="#C0392B" stroke="#FFF" stroke-width="3"/>
+    </g>
+
+    <!-- Shockwave Lines -->
+    <path d="M 15 115 Q 117 80 220 115" fill="none" stroke="#FFF" stroke-width="3" opacity="0.8"/>
+    <path d="M 25 140 Q 117 105 210 140" fill="none" stroke="#F9D342" stroke-width="2" opacity="0.8"/>
+
+    <!-- Status Code Label -->
+    <rect x="25" y="190" width="185" height="28" rx="6" fill="#0D1117" stroke="#2EA043"/>
+    <text x="117" y="208" font-family="monospace" font-size="11" font-weight="800" fill="#2EA043" text-anchor="middle">BUILD SUCCESS (0 BUGS)</text>
+  </g>
+</svg>
