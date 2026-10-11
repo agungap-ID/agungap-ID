@@ -1,6 +1,3 @@
-# Hello_Universe
-(ง'̀-'́)ง
-
 <div align="center">
 
 # 👊 Hi, I'm Agung Ap
